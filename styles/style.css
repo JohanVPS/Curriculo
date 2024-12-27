@@ -1,3 +1,7 @@
+:root {
+    --gradiente: linear-gradient(to right, rgb(56, 17, 105), #8800ba);
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -30,14 +34,36 @@ nav ul li {
     flex: 1; /* Faz os itens ocuparem o mesmo espaço */
     text-align: center; /* Centraliza o texto dentro da "caixa" */
     padding: 0.7rem 0;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     font-size: 1.1rem;
 }
 
 nav ul li:hover {
-    background-color: #8800ba;
-    font-size: 1.175rem;
+    background: var(--gradiente);
+    font-size: 1.2rem;
     border-radius: 0.6rem;
     color: white; 
     cursor: pointer;
+}
+
+.home{
+    margin-top: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    justify-items: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .left-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: whitesmoke;
 }
