@@ -47,7 +47,7 @@ nav ul li:hover {
 }
 
 .home{
-    margin-top: 10rem;
+    margin-top: 1.5rem;
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
@@ -59,6 +59,9 @@ nav ul li:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 40rem;
+    background-color: rgb(30, 30, 30);
+    gap: 5rem;
 }
 
 .box .left-content{
@@ -66,4 +69,27 @@ nav ul li:hover {
     flex-direction: column;
     width: 50%;
     color: whitesmoke;
+}
+
+.box .left-content h3{
+    font-size: 2rem;
+}
+.box .left-content p{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.box .right-content{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.box .right-content .eu_icon{
+    border-radius: 100rem;
+    height: 25rem;
+}
+
+#eu_icon_homeSec{
+    zoom: 100%;
 }
