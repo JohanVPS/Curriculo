@@ -13,10 +13,13 @@ nav{
     background-color:rgb(19, 19, 19);
     color: white;
     display: flex;
+    margin-top: -1.5rem;
     padding: 0.3rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+    position: fixed;
+    width: 100%;
 }
 
 nav ul{
@@ -40,10 +43,11 @@ nav ul li {
 
 nav ul li:hover {
     background: var(--gradiente);
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     border-radius: 0.6rem;
     color: white; 
     cursor: pointer;
+    transform: translateY(0.2rem);
 }
 
 .home{
@@ -59,7 +63,8 @@ nav ul li:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 40rem;
+    height: 45rem;
+    width: 100%;
     background-color: rgb(30, 30, 30);
     gap: 5rem;
 }
@@ -92,4 +97,64 @@ nav ul li:hover {
 
 #eu_icon_homeSec{
     zoom: 100%;
+}
+
+/* Estilo geral da seção */
+.skills {
+    padding: 2rem;
+    background: whitesmoke; /* Cor de fundo suave */
+    text-align: center;
+    height: max-content;
+}
+
+/* Estilo do título */
+.skills h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo da grade */
+.skills .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* Adaptação para tamanhos menores */
+    gap: 1.5rem; /* Espaço entre os itens */
+    justify-items: center; /* Centraliza os itens */
+}
+
+/* Estilo de cada cartão */
+.skills .card {
+    background: rgb(30, 30, 30); /* Fundo branco para contraste */
+    color: whitesmoke;
+    border: 0.1rem solid #8800ba; /* Borda sutil */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out; /* Transição suave para hover */
+    max-width: 300px;
+}
+
+/* Hover no cartão */
+.skills .card:hover {
+    transform: translateY(-5px); /* Elevação ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    background: var(--gradiente);
+    border-color: rgb(19, 19, 19);
+    cursor: pointer;
+}
+
+/* Estilo do texto no cartão */
+.skills .card p {
+    font-size: 0.9rem;
+    color: #d5d5d5; /* Cor do texto */
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+/* Estilo da imagem no cartão */
+.skills .card img {
+    width: 10rem;
+    height: auto; /* Mantém a proporção */
+    margin-top: 1rem;
 }
