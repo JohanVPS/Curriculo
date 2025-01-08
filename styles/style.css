@@ -104,7 +104,7 @@ nav ul li:hover {
 
 .skills {
     padding: 2rem;
-    background: whitesmoke;
+    background: rgb(34, 34, 34);
     text-align: center;
     height: max-content;
 }
@@ -112,7 +112,7 @@ nav ul li:hover {
 .skills h3 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: whitesmoke;
 }
 
 .skills .grid {
@@ -154,4 +154,85 @@ nav ul li:hover {
     width: 7rem;
     height: auto;
     margin-top: 1rem;
+}
+
+/* Estilo geral da seção */
+.formacao-e-experiencia {
+    padding: 2rem;
+    background-color: rgb(34, 34, 34); /* Fundo escuro para combinar com a página */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 2rem 0;
+}
+
+.formacao-e-experiencia h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: whitesmoke; /* Texto claro para contraste */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Container para os cards */
+.container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap; /* Adapta a disposição para telas menores */
+}
+
+/* Estilo dos cards */
+.formacao, .experiencia {
+    background: rgb(30, 30, 30); /* Fundo escuro para os cards */
+    color: whitesmoke; /* Texto claro */
+    border: 1px solid #8800ba; /* Destaque roxo */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    width: 45%;
+    /* max-width: 400px; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.formacao:hover, .experiencia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(136, 0, 186, 0.5); /* Sombra com o tema roxo */
+    background: var(--gradiente); /* Fundo em gradiente */
+    cursor: pointer;
+}
+
+/* Títulos dos cards */
+.formacao h3, .experiencia h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: whitesmoke; /* Destaque no título */
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Lista dentro dos cards */
+.formacao ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: whitesmoke; /* Lista clara */
+}
+
+.formacao ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Texto dentro do card de experiência */
+.experiencia p {
+    font-size: 1rem;
+    color: #d5d5d5; /* Texto com tom claro */
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha os cards em telas menores */
+    }
 }
