@@ -10,14 +10,14 @@
     <main>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Skills</li>
-                <li>Formação e Experiência</li>
-                <li>Contato</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#formacao-e-experiencia">Formação e Experiência</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
-        </nav>
+        </nav>        
         <div class="content">
-            <section class="home">
+            <section class="home" id="home">
                 <div class="box">
                     <div class="left-content">
                         <h3>Quem sou eu?</h3>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </section>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <h3>Conheça um pouco das minhas skills:</h3>
                 <div class="grid">
                     <div class="card">
@@ -86,13 +86,19 @@
                         <h4>Firebase</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et aut amet numquam. Quo aliquid asperiores reiciendis, temporibus ullam quis architecto blanditiis vitae labore vel ut ea laborum perspiciatis delectus ipsam.</p>
                     </div>
+                    <div class="card">
+                        <img src="../assets/img/react.png" alt="React">
+                        <h4>React</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et aut amet numquam. Quo aliquid asperiores reiciendis, temporibus ullam quis architecto blanditiis vitae labore vel ut ea laborum perspiciatis delectus ipsam.</p>
+                    </div>
                 </div>
             </section>
-            <section class="formacao-e-experiencia">
+            <section class="formacao-e-experiencia" id="formacao-e-experiencia">
                 <h2>Formação e Experiência</h2>
                 <div class="container">
                     <div class="formacao">
                         <h3>Cursos e Formação Acadêmica</h3>
+                        <br>
                         <ul>
                             <li><strong>Ciência da Computação</strong> - UESC (2022)</li>
                             <li><strong>Ciência da Computação</strong> - UNIFACS (2023 - 2026, previsto)</li>
@@ -101,19 +107,67 @@
                     </div>
                     <div class="experiencia">
                         <h3>Experiência Profissional</h3>
+                        <br>
                         <ul>
                             <li><strong>Órbita Tecnologia</strong> (2024)
                             <br>
                             <br>
                             Participação no Desafio Senai de Projetos Integradores (DSPI). Trabalhei em projetos reais com <strong>React</strong> e <strong>Flutter</strong>, desenvolvendo soluções tecnológicas inovadoras.</li>  
                         </ul>
-                        
                     </div>
                 </div>
             </section>                        
-            <section class="contato">
-                
+            <section class="contato" id="contato">
+                <h3>Contato</h3>
+                <h4>Entre em contato e saiba mais sobre meu trabalho nas minhas redes!</h4>
+                <div class="container">
+                    <a href="https://www.github.com/JohanVPS" class="image-button">
+                        <img src="../assets/img/github.png" alt="Github"> Github
+                    </a>
+                    <a href="mailto:johanvps.work@gmail.com?subject=Contato&body=Olá,%20gostaria%20de%20saber..." class="image-button">
+                        <img src="../assets/img/gmail.png" alt="Email"> Gmail
+                    </a>
+                    <a href="https://www.linkedin.com/in/johan-santos/" class="image-button">
+                        <img src="../assets/img/linkedin.png" alt="Linkedin"> Linkedin
+                    </a>
+                    <a href="https://www.instagram.com/johan_afx" class="image-button">
+                        <img src="../assets/img/instagram.png" alt="Instagram"> Instagram
+                    </a>                  
+                </div>
             </section>
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-links">
+                        <h4>Links Rápidos</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#skills">Habilidades</a></li>
+                            <li><a href="#formacao-e-experiencia">Formação e Experiência</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Redes Sociais</h4>
+                        <div class="social-icons">
+                            <a href="https://www.github.com/JohanVPS" class="social-link">
+                                <img src="../assets/img/github.png" alt="Github"> Github
+                            </a>
+                            <a href="mailto:johanvps.work@gmail.com?subject=Contato&body=Olá,%20gostaria%20de%20saber..." class="social-link">
+                                <img src="../assets/img/gmail.png" alt="Gmail"> Gmail
+                            </a>
+                            <a href="https://www.linkedin.com/in/johan-santos/" class="social-link">
+                                <img src="../assets/img/linkedin.png" alt="LinkedIn"> LinkedIn
+                            </a>
+                            <a href="https://www.instagram.com/johan_afx" class="social-link">
+                                <img src="../assets/img/instagram.png" alt="Instagram"> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2025 Johan V. P. Santos. Todos os direitos reservados.</p>
+                </div>
+            </footer>                        
         </div>
     </main>
 </body>
